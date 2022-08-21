@@ -22,11 +22,15 @@ mongoose.connect(process.env.MONGO, () => {
     console.log('connected to db successfully');
 });
 
-
+app.get('/',async(req,res,next)=>{
+    console.log(req.headers['authorization'])
+    res.send('Hey man !')}
+  )
 
 
 app.listen(3000, () => {
     console.log('listening for requests');
+
 });
 
 //middellware

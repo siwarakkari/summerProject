@@ -1,0 +1,19 @@
+### 
+post http://localhost:3000/api/offer/create
+Content-Type: application/json
+
+{
+ "name": "wassim",
+ "category": "IA" ,
+ "body" : "hey boy"
+}
+
+
+
+###
+get http://localhost:3000
+Content-Type: application/json
+###
+
+GET http://localhost:3000
+Content-Type: application/json

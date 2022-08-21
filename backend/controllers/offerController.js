@@ -43,7 +43,7 @@ const createOffer = async(req, res) => {
         const offer = await Offer.insert({ name, category, body })
         res.status(200).json(offer)
     } catch (error) {
-        res.status(400).json({ error: error.message })
+        res.status(400).json({ error: "3a9adni nizarrrrrrrrrr" })
     }
 }
 
@@ -94,8 +94,6 @@ module.exports = {
 
 
     getOffers,
-
-
     getOffer,
     createOffer,
     deleteOffer,
